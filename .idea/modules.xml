@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Trang_Web_Ban_haisan.iml" filepath="$PROJECT_DIR$/.idea/Trang_Web_Ban_haisan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/trangwebbanhaisan.iml" filepath="$PROJECT_DIR$/.idea/trangwebbanhaisan.iml" />
     </modules>
   </component>
 </project>
