@@ -36,7 +36,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="Trangchu.html">
                 <div class="sidebar-brand-icon rotate-n-15" style="width: 25px;height: 25px">
                     <i class="fa-solid fa-screwdriver-wrench"></i>
 
@@ -49,7 +49,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="Trangchu.html">
                     <i class="fa-solid fa-house"></i>
                     <span>Trang chủ</span></a>
             </li>
@@ -64,12 +64,12 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="Quanlysanpham.html" >
                     <i class="fa-solid fa-truck"></i>
-                    <span>Quản lí sản phẩm</span>
+                    <span>Quản lí đơn hàng</span>
                 </a>
 
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="Quanlysanpham.html" >
+                <a class="nav-link collapsed" href="Quanlynguoidung.html" >
                     <i class="fa-solid fa-user-tie"></i>
 
                     <span>Quản lí người dùng</span>
@@ -77,26 +77,39 @@
 
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="index.html" >
-                    <i class="fa-solid fa-fish"></i>
-                    <span>Thêm sản phẩm</span>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                   aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Quản lý sản phẩm</span>
                 </a>
-
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="Themsanpham.html">Thêm sản phẩm</a>
+                        <a class="collapse-item" href="Quanlysanpham.html">Danh sách sản phẩm</a>
+                    </div>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="index.html" >
-                    <i class="fa-solid fa-money-bill"></i>
-                    <span>Quản lí doanh thu</span>
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                   aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Quản lý voucher</span>
                 </a>
+                <div id="collapseUtilities" class="collapse show" aria-labelledby="headingUtilities"
+                     data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
 
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="index.html" >
-                    <i class="fa-regular fa-newspaper"></i>
-                    <span>Quản lí hóa đơn</span>
-                </a>
 
+                        <a class="collapse-item" href="Themvoucher.html">Thêm Voucher</a>
+                        <a class="collapse-item" href="Quanlyvoucher.html">Danh sách Voucher</a>
+                    </div>
+                </div>
             </li>
+
+
+
+
+
 
             <!-- Nav Item - Utilities Collapse Menu -->
 
@@ -339,73 +352,28 @@
 
                         <form>
                             <div class="mb-3" >
-                                <label for="masanpham" class="form-label">Mã sản phẩm</label>
+                                <label for="masanpham" class="form-label">Mã Voucher</label>
                                 <input type="text" class="form-control" id="masanpham" >
 
                             </div>
-                            <div class="mb-3">
-                                <label for="tensanpham" class="form-label">Tên sản phẩm</label>
-                                <input type="text" class="form-control" id="tensanpham" >
-
-                            </div>
-                            <div class="mb-3">
+                            <div class="mb-3" >
                                 <label for="masanpham" class="form-label">Số lượng</label>
                                 <input type="number" class="form-control"  >
 
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label">Tình trạng</label><br>
-                                <select class="form-select" style="width: 200px; height: 40px; border-radius: 10px; border: 1px solid lightgrey" aria-label="Default select example">
-                                    <option style="text-align: center"selected>-- Tình Trạng --</option>
-                                    <option value="1">Còn</option>
-                                    <option value="2">Hết</option>
-                                    <option value="3">Chưa có</option>
-                                </select>
-
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Danh Mục</label><br>
-                                <select class="form-select" style="width: 200px; height: 40px; border-radius: 10px; border: 1px solid lightgrey" aria-label="Default select example">
-                                    <option style="text-align: center" selected>-- danh mục --</option>
-                                    <option value="1">Tôm</option>
-                                    <option value="2">Cá</option>
-                                    <option value="3">Mực</option>
-                                </select>
-
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Nhà Cung Cấp</label><br>
-                                <select class="form-select" style="width: 200px; height: 40px; border-radius: 10px; border: 1px solid lightgrey" aria-label="Default select example">
-                                    <option style="text-align: center" selected>-- Nhà cung cấp --</option>
-                                    <option value="1">Sài gòn</option>
-                                    <option value="2">Thái Bình</option>
-                                    <option value="3">Hà Nội</option>
-                                </select>
-
-                            </div>
-
-
-                            <div class="mb-3">
-                                <label for="masanpham" class="form-label">Giá bán</label>
+                            <div class="mb-3" >
+                                <label for="masanpham" class="form-label">Discount</label>
                                 <input type="number" class="form-control"  >
 
                             </div>
-                            <div class="mb-3">
-                                <label for="masanpham" class="form-label">Giá vốn</label>
-                                <input type="number" class="form-control">
-
-
-                            </div>
-                            <div class="mb-3">
-                                <label for="masanpham" class="form-label">Thêm Hình Ảnh</label>
-                                <input type="file" class="form-control" style="width: 600px; height: 50px">
-
+                            <div class="mb-3" >
+                                <label for="masanpham" class="form-label">Ngày bắt đầu</label>
+                                <input type="date" class="form-control"  >
 
                             </div>
-                            <div class="mb-3">
-                                <label for="masanpham" class="form-label">Mô tả</label>
-                                <input type="text" class="form-control" style="width: 1200px; height:200px">
-
+                            <div class="mb-3" >
+                                <label for="masanpham" class="form-label">Ngày kết thúc</label>
+                                <input type="date" class="form-control"  >
 
                             </div>
 
@@ -415,7 +383,8 @@
 
 
 
-                            <button type="submit" class="btn btn-primary" style="float: right; width: 200px; margin-right: 500px; margin-bottom: 100px; padding: 20px 20px" >THÊM SẢN PHẨM</button>
+
+                            <button type="submit" class="btn btn-primary" style=" width: 500px; margin-top: 200px; margin-bottom: 40px; margin-left:100px" >THÊM VOUCHER</button>
                         </form>
                     </div>
 
